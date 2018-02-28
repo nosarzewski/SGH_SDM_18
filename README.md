@@ -11,7 +11,7 @@ contact: nosarzewski.aleks@gmail.com (preferred) or an56786@sgh.waw.pl
 27.03.2018 - Neural networks: MXnet, Test  
 ## Announcements
 After our last class it turned out that two groups got mixed - mine and other one. According to timetable on Dean's Office website two groups were marked as number 100. It should be corrected this week. In the meantime please check your group numbers in Virtual Dean's Office and attend as follows:  
-group 100 - room B12, led by myself,
-group 101 - room A113, led by Micha? Kot.
+group 100 - room B12, led by myself,  
+group 101 - room A113, led by Michal Kot.  
 Kind regards,
 Aleksander Nosarzewski
