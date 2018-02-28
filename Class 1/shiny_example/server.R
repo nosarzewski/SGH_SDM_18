@@ -1,6 +1,15 @@
 #Wczytanie bibliotek
-require(fmsb)
-require(plotrix)
+if (!require(fmsb)) {
+  install.packages('fmsb')
+} else {
+  library(fmsb)
+}
+
+if (!require(plotrix)) {
+  install.packages('plotrix')
+} else {
+  library(plotrix)
+}
 #library(condformat)
 
 #Wczytanie danych
