@@ -1,6 +1,6 @@
 # Statistical Decision Methods at SGH
 summer semester 2017/18  
-groups: 100 & 101 (previously led by Michał Kot) . 
+groups: 100 & 101 (previously led by Michał Kot)   
 classes: Tuesdays 17.10-19.45, room B-12 (Library)  
 contact: nosarzewski.aleks@gmail.com (preferred) or an56786@sgh.waw.pl
 ## Course plan
