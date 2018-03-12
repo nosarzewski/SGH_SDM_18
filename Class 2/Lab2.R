@@ -12,7 +12,7 @@ library(ROCR)
 #reading data
 LINES <- readLines("https://raw.githubusercontent.com/nosarzewski/SGH_SDM_18/master/Class%202/dictionary.txt")
 SELECTED_LINES <- LINES[4:89]
-LIST_OF_STRING_VECTORS <- strsplit(SELECTED_LINES, split = " ")[2]
+LIST_OF_STRING_VECTORS <- strsplit(SELECTED_LINES, split = " ")
 # if you get an error (ex. if you are a Mac user) please run instead:
 # LIST_OF_STRING_VECTORS <- strsplit(SELECTED_LINES, split = " ", perl = TRUE)
 GetSecondElement <- function(vector) {
