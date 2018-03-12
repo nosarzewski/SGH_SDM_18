@@ -1,6 +1,6 @@
 # Competition  
 Please download file `train_data.csv` which contains:  
-* `Target` - dependant variable of interest  
+* `Target` - dependant variable of interest (continuous) 
 * `V1 - V17` - explanatory variables which are available to use
 
 
