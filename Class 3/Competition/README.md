@@ -5,7 +5,7 @@ Please download file `train_data.csv` which contains:
 
 
 In this data set you have 666 observations to train your models.  
-The aim of the contest is to train model and make most accurate predictions for observations stored in file `test_data.csv`, containing further 111 observations.
+The aim of the contest is to train model and make most accurate predictions for observations stored in file `test_data.csv`, containing further 111 observations. You can use any method you like - covered during our classes or not.
 
 You can work in pairs (but pairs only). Each pair has 3 tries to submit their predictions. Only the best prediction is taken into account. Models will be evaluated based on Mean Squared Error (MSE). Pair who submits model with the lowest MSE wins. If two models have the same MSE, one submitted earlier is considered to be better.  
 
