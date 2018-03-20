@@ -30,7 +30,9 @@ if (!require(rpart)){
   install.packages('rpart')
   library(rpart)
 }
-# CART choses variables and split points by maximal change in selected measure (Gini index, entropy)
+# CART choses variables and split points by:
+# for classification: maximizing node purity (Gini index/entropy) 
+# for regression: minimizing classification error (ex. Residual Sum of Squares, RSS)
 # fitting model
 rpart.model <- rpart(class ~ ., train.set, cp = 0.00001, minsplit = 2)
 plot(rpart.model, compress = T, uniform = T, margin = 0.1,
