@@ -56,7 +56,6 @@ if (!require(party)){
   library(party)
 }
 # ctree algorithm choses variables based on significance tests
-# potential split points are randomly generated and optimal one is selected only from them
 ctree.model <- ctree(factor(class) ~ ., data = train.set,
                      controls = ctree_control(mincriterion = 0.99,
                                               minsplit = 20))
@@ -64,6 +63,9 @@ plot(ctree.model, tnex = 2, type = "extended")
 devAskNewPage(ask = TRUE)
 
 # Random forests
+# problem: we want to reduce variance of our predictions and deal with correlated trees
+# we bag our data set and build many unpruned trees, but for each tree only small (random) subset of variables is possible
+# final predictions are an average (for regression trees) or dominant (for classification)
 if (!require(randomForest)){
   install.packages('randomForest')
   library(randomForest)
@@ -97,6 +99,9 @@ print(data.frame(model = c("ctree", "rpart pruned", "random forest"),
 
 # extraTrees (Extremely Randomized Trees)
 # this package uses Java - if you get an error you need to install Java manually
+# extra Trees does not perform bagging
+# instead of looking for best split for predictiors, a number of random splits is generated and best one is chosen from them
+# trees are even less correlated than in random forest
 if (!require(extraTrees)){
   install.packages('extraTrees')
   library(extraTrees)
@@ -132,7 +137,7 @@ xgb_fit <- train(class ~ ., data = train.set,
                 method = "xgbTree",
                 trControl = cv_5,
                 verbose = FALSE,
-                tuneLength = 10)
+                tuneLength = 3) # tune length - maximal depth of a tree
 
 # Finding best tuning
 xgb_fit$bestTune
@@ -143,6 +148,7 @@ print(data.frame(model = c("ctree", "rpart pruned", "random forest", "extraTree"
                  accuracy = sapply(confusion.matrix, CalculateAccuracy)), row.names = FALSE)
 
 # Neural networks (nnet)
+# used for nnets with oinly one hidden layer
 if (!require(nnet)){
   install.packages('nnet')
   library(nnet)
