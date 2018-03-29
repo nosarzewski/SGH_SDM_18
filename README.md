@@ -8,4 +8,6 @@ contact: nosarzewski.aleks@gmail.com (preferred) or an56786@sgh.waw.pl
 06.03.2018 - Methods of evaluation of classifiers, Non-parametric regression models: splines  
 13.03.2018 - Non-parametric models: LOESS, GAM; Classification competition  
 20.03.2018 - Classical machine learning modles: CART, ctree, random forest; extensions: extraTrees and XGBoost; Neural networks: nnet  
-__27.03.2018 - Neural networks: MXnet, Test__  
+27.03.2018 - Neural networks: MXnet, Test  
+## Announcements  
+People who were absent during test can take it on __4th of April, 15.30, room C-2d__. Please bring your own computers.
