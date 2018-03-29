@@ -10,4 +10,4 @@ contact: nosarzewski.aleks@gmail.com (preferred) or an56786@sgh.waw.pl
 20.03.2018 - Classical machine learning modles: CART, ctree, random forest; extensions: extraTrees and XGBoost; Neural networks: nnet  
 27.03.2018 - Neural networks: MXnet, Test  
 ## Announcements  
-People who were absent during test can take it on __4th of April, 15.30, room C-2d__. Please bring your own computers.
+People who were absent during test can take it on __4th of April, 15.30, room C-2d__ after contacting with me and providing a reason of absence. Please bring your own computers.
